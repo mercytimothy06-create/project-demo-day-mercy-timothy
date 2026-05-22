@@ -1,0 +1,96 @@
+/*Modern Reset and Variables*/
+:root{
+  --primary-color:blue;
+  --background-color:white;
+  --card-background:white;
+  --text-color: #333333;
+  --border-color:white;
+}
+
+body{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.portal-container{
+  background-color: var(--background-color);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgb(0, 0, 0, 0.05);
+  width: 100%;
+  max-width: 500px;
+}
+h2{
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 25px;
+}
+
+h3{
+  border-bottom: 2px solid var(--background-color);
+  padding-bottom: 8px;
+  margin-top: 25px;
+  color: #555;
+}
+.form-group{
+  margin-bottom: 18px;
+}
+label{
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select{
+  width: 200%;
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-size: 14px;
+  transition: border-color 0.3s;
+}
+input:focus, select:focus{
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+
+.btn-submit{
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 15px;
+  transition: background-color 0.2s;
+}
+
+.btn-submit:hover{
+  background-color: #357abd;
+}
+
+@media (max-width:480px){
+  body{
+    padding:10px;/*Reduces space around the form on small screen*/
+  }
+
+.portal-container {
+  padding: 20px;/* Gives the form fields more room inside the card */
+}
+}

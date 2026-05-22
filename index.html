@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student-Portal Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+      <div class="portal-container">
+          <h2>Student Portal</h2>
+
+          <form id="studentForm">
+            <h3>Account Verification</h3>
+
+            <div class="form-group">
+                <label for="student-email">School Email Address</label>
+                <input type="email" id="student-email" required placeholder="e.g.,student@school.edu">
+            </div>
+            <br>
+            <br>
+
+            <div class="form-group">
+                <label for="password">Portal Password</label>
+                <input type="password" id="password" required placeholder="Enter your password">
+            </div>
+            <br>
+            <br>
+
+            <h3>Student Information</h3>
+
+            <div class="form-group">
+                <label for="full-name">Full Name</label>
+                <input type="text" id="full-name" required placeholder="Enter your full name">
+            </div>
+            <br>
+            <br>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" required placeholder="Enter your email address">
+            </div>
+            <br>
+            <br>
+
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" required placeholder="e.g., (123) 456-7890">
+            </div>
+            <br>
+            <br>
+
+            <div class="form-group">
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" required>
+            </div>
+            <br>
+            <br>
+
+            <div class="form-group">
+                <label for="Gender">Gender</label>
+                <select id="Gender" required>
+                    <option value="">--Select Gender--</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <br>
+            <br>
+
+            <div class="form-group">
+                <label for="student-id">Student ID Number</label>
+                <input type="text" id="student-id" required placeholder="STU-12345">
+            </div>
+            <br>
+            <br>
+
+            <div class="form-group">
+                <label for="department">Academic Department</label>
+                <select id="department" required>
+                <option value="">--Select Department--</option>
+                <option value="Health Science & Wellness">Health Science & Wellness</option>
+                <option value="Literature & Creative Writing">Literature & Creative Writing</option>
+                <option value="Computer Science">Computer Science</option>
+                <option value="Social Science">Social Science</option>
+                <option value="Faculty of Arts">Faculty of Arts</option>
+                <option value="Department of History">Department of History</option>
+                <option value="Department of BioChemistry">Department of BioChemistry</option>
+                </select>
+            </div>
+            <br>
+            <br>
+            <div class="form-group">
+                <label for="enrollment-year">Year of Enrollment</label>
+                <input type="number" id="enrollment-year" required placeholder="e.g., 2020" min="2000" max="2024">
+            </div>
+            <br>
+            <br>
+
+            <div class="form-group">
+                <label for="graduation-year">Expected Graduation Year</label>
+                <input type="number" id="graduation-year" required placeholder="e.g., 2024" min="2020" max="2030">
+            </div>
+            <br>
+            <br>
+           
+            <div class="form-group">
+                <label for="gpa">Current GPA</label>
+                <input type="number" id="gpa" required placeholder="e.g., 3.5" step="0.01" min="0" max="4">
+            </div>
+            <br>
+            <br>
+            <div class="form-group">
+                <label for=""></label>
+            </div>
+            <button type="submit" class="btn-submit">Access Portal</button>
+          </form>
+      </div>
+      <script src="script.js"></script>
+</body>
+</html>
