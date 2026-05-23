@@ -14,6 +14,6 @@ document.addEventListener('DOMContentLoaded',function(){
     const dept = document.getElementById('department').value;
 
     //Pop up a custom welcome message!
-    alert('Welcome back, ${name}! Logged into the ${dept}portal successfully.');
+    alert(`Welcome back, ${name}! Logged into the ${dept}portal successfully.`);
   });
   });
