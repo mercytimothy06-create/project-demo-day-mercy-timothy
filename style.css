@@ -2,14 +2,14 @@
 :root{
   --primary-color:blue;
   --background-color:white;
-  --card-background:white;
+  --card-background: rgb(125, 125, 240);
   --text-color: #333333;
   --border-color:white;
 }
 
 body{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: var(--background-color);
+  background-color: var(--card-background);
   color: var(--text-color);
   margin: 0;
   padding: 40px 20px;
